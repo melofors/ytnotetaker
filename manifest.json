@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Note Taker",
+    "description": "Take notes for a YouTube video using AI",
+    "version": "1.0",
+    "action": {
+        "default_icon": "images/logo.png"
+      },
+    "content_scripts": [
+        {
+            "js": ["scripts/content.mjs"],
+            "run_at": "document_idle",
+            "matches": [
+            "https://www.youtube.com/*"
+            ]
+        }
+    ]
+}
